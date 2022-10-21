@@ -2,12 +2,6 @@ from ast import Try
 import pygame
 import pickle
 import tmx
-# Tile layer 2 is USELESS
-#(yes, this is a good representation of the code
-# that awaits you)
-#ooh look at me i start counting from zero
-#treating it as a number
-#rather than the lack of a number it truly is
 import random    
 import sys
 import copy
@@ -94,29 +88,7 @@ class party:
             if i != None:
                 self.players.append(i)
         print(self.players)
-##        for i in kwargs:
-##            
-##            try:
-##                self.player2 = i
-##                self.players.append(self.player2)
-##            except AttributeError:
-##                self.player2 = None
-##            try:
-##                if i != self.player2:
-##                    self.player3 = i
-##                    self.players.append(self.player3)
-##                else:
-##                    self.player3 = None
-##            except AttributeError:
-##                self.player3 = None
-##            try:
-##                if i != self.player3 and i != self.player2:
-##                    self.player4 = i
-##                    self.players.append(self.player4)
-##                else:
-##                    self.player4 = None
-##            except AttributeError:
-##                self.player4 = None
+
         #print('Party members are:',self.players)
     def addmember(self,arg):
         #Something about this feels stupid and wrong
